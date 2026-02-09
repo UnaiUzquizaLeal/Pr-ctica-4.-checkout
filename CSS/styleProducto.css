@@ -1,0 +1,158 @@
+:root{
+  --desctacado: #ff8800;
+
+}
+
+.nombreProducto{
+    font-family: "Zen Dots";
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.productoCompleto{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    margin: 20px 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "fp"
+    "fc"
+    "d "
+    "bt";
+    
+}
+p{
+    margin: 15px;
+}
+
+
+
+.datos {
+    grid-area: d;
+    border-radius: 15px 15px 15px 15px;
+    height: auto;
+
+}
+.oferta{
+    background-color: var(--desctacado);
+    margin-left: 15px;
+    width: 250px;
+    font-size: 1.2em;
+    border-radius: 2px;
+}
+
+.oferta img{
+    width: 25px;
+    height: 25px;
+}
+
+.precio{
+    display: flex;
+}
+
+.precioOferta{
+    font-size: 2em;
+    font-weight: bold;
+}
+.precioEstandar{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: line-through;
+}
+
+.imagenPrincipal{
+    grid-area: fp;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    background-color: rgb(231, 231, 231);
+    border: solid rgb(119, 119, 119) 1px;
+    padding: 10px 100px;
+
+}
+
+.imagenPrincipal:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.imagenPrincipal img{
+    width: 200px;
+    height: 300px;
+}
+
+.imagenesSecundarias{
+    grid-area: fc;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+.imagenPrincipal:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.imagenesSecundarias img{
+    width: 60px;
+    height: 80px;
+    background-color: rgb(231, 231, 231);
+
+    border-radius: 4px;
+    border: solid rgb(119, 119, 119) 1px;
+    padding: 10px;
+}
+.imagenesSecundarias img:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+.botones {
+    grid-area: bt;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.boton1{
+    background-color: rgba(255, 0, 0, 0.76);
+    border-radius: 4px;
+    border: solid rgb(119, 119, 119) 1px;
+    width: 100px;
+    height: 30px;
+}
+.boton1:hover{
+    background-color: rgba(199, 63, 63, 0.76);
+    transition: 0.2s;   
+
+}
+
+.boton2{
+    background-color: rgb(255, 195, 0);
+    border-radius: 4px;
+    border: solid rgb(119, 119, 119) 1px;
+    width: 140px;
+    height: 30px;
+}
+.boton2:hover{
+    background-color: rgb(165, 138, 49);
+    transition: 0.2s;   
+
+}
+
+.boton3{
+    background-color: rgb(33, 66, 99);
+    border-radius: 4px;
+    border: solid rgb(119, 119, 119) 1px;
+    width: 100px;
+    height: 30px;
+}
+.boton3:hover{
+    background-color: rgb(54, 109, 163);
+    transition: 0.2s;   
+
+}

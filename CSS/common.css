@@ -1,0 +1,89 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --header: rgb(33, 66, 99);
+  --nav: #ff8800;
+  --footer: rgb(33, 66, 99);
+  --titulo: #ff8800;
+}
+
+
+header{
+  grid-area: h;
+  font-family: "Zen Dots";
+  /* font-family: "Embed code"; */
+  font-size: 3em;
+  text-align: center;
+  background-color: var(--header);
+}
+header a{
+  color: var(--titulo);
+}
+header div{
+  padding: 20px;
+}
+header div:hover{
+  transform: scale(1.2);
+  transition: 0.3s;    
+}
+
+nav{
+  grid-area: n;
+  background-color: var(--nav);
+
+  height: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  padding-right: 50px;
+  font-size: 15px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  
+  padding-top: 5px;
+}
+
+nav > input{
+  width: 200px;
+  height: 20px
+}
+
+
+footer {
+  grid-area: f;
+  height: 1200px;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--footer);
+  text-decoration: none;
+  font-size: 18px;
+  flex-wrap: wrap
+
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgb(255, 195, 0);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none; 
+  color: #333; 
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #007bff; 
+}
